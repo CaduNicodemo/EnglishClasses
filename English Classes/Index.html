@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Course</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <button class="btn btn-dark" id="nightModeButton"><i class="fas fa-moon"></i></button>
+        <ul class="nav nav-tabs mt-3">
+            <li class="nav-item">
+                <a class="nav-link active" id="class1-tab" data-toggle="tab" href="#class1">Class 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="class2-tab" data-toggle="tab" href="#class2">Class 2</a>
+            </li>
+        </ul>
+
+        <div class="tab-content mt-3">
+            <div class="tab-pane fade show active" id="class1">
+                <h2>Listening</h2>
+                <h5>The First English Class</h5>
+                <audio controls id="audioPlayer1">
+                    <source src="https://6a63fca904fd268f15f7-d5770ffdd579eb31eaa89faeffc55fe7.ssl.cf1.rackcdn.com/LE_listening_A1_The_first_English_class.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio> <br>
+                <button class="btn btn-primary mt-2" id="showTranscriptionButton1">Transcription</button>
+                <div id="audioTranscription1" style="display:none;">
+
+                    <p>
+                        Hello, everyone. Hello! It's nice to see you all here. Welcome to British Life and Language. I am your teacher. My name is Lindsay Black. That's L-I-N-D-S-A-Y Black. Before we begin, some information about the class. <br><br> Our
+                        class is in room 13, on the first floor. When you go upstairs, turn left to find the room. Again, that's room 13. <br><br>We have class twice a week, on Monday and Wednesday. Our class begins at 4.30 p.m. and lasts 90 minutes,
+                        so we finish at 6 p.m. That's 4.30 to 6. Please arrive on time, OK? <br><br> Also, I have an office hour if you have questions. I'm in office 7B on the second floor. My office hour is Friday at 6 p.m. So, if you have any questions
+                        or problems or want to talk to me, it's Friday at 6 p.m. in office 7B.<br><br> We begin next week, on March the 13th. That's Monday, March the 13th. The course ends on May the 20th. May the 20th is the last day.<br><br> I think
+                        that's all ... Oh, one more thing. For this course you need the book. Here it is: British Life and Language Level 1 Student's Book. So, please get a copy of the book. I don't want to see any photocopies of the book, thank you!
+                        Remember, it's level 1 student's book. Don't buy the teacher's book. <br><br>I think that's all, everyone. I look forward to working with you. See you next Monday!</p>
+                </div>
+                <br><br><br>
+                <h2>Video</h2>
+
+                <div class="video-container">
+                    <h5><a href="https://www.bbc.co.uk/programmes/p0278sng">Welcome to London</a></h3>
+                        <div class="embed-responsive embed-responsive-16by9"><iframe width="400" height="500" frameborder="0" src="http://www.bbc.co.uk/programmes/p0278sng/player"></iframe>
+                        </div><br>
+                        <button class="btn btn-primary mt-2" id="showTranscriptionButton2">Transcription</button>
+                        <div id="audioTranscription2" style="display:none;">
+
+                            <p>
+                                <b>Amith</b>
+                                <br> Hi. Nice to meet you.
+                                <br><br> <b>Alice</b>
+                                <br> Nice to meet you.
+                                <br><br> <b>Amith</b>
+                                <br> Alright?
+                                <br><br> <b>Emma</b>
+                                <br> How's it going?
+                                <br><br> <b>Emma</b>
+                                <br> Hiya!
+                                <br><br> <b>Amith</b>
+                                <br> Afternoon!
+                                <br><br> <b>Amith</b>
+                                <br> Hi there.
+                                <br><br> <b>Alice</b>
+                                <br> Hello.
+                                <br><br> <b>Emma</b>
+                                <br> Hello.
+                                <br><br> <b>Alice</b>
+                                <br> Hey!
+                                <br><br> <b>Emma</b>
+                                <br> Hi, I'm Emma.
+                                <br><br> <b>Alice</b>
+                                <br> Hello, I'm Alice.
+                                <br><br> <b>Amith</b>
+                                <br> Alright? I'm Amith.
+                                <br><br> <b>All</b>
+                                <br> Welcome to BBC Learning English.</p>
+                        </div>
+
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="class2">
+                <h2>Bloqueado</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap and Popper.js JS files -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        // JavaScript to toggle night mode
+        document.getElementById('nightModeButton').addEventListener('click', function() {
+            document.body.classList.toggle('night-mode');
+            var icon = document.getElementById('nightModeButton').querySelector('i');
+            icon.classList.toggle('fa-moon');
+            icon.classList.toggle('fa-sun');
+            var links = document.querySelectorAll('a');
+            links.forEach(function(link) {
+                link.classList.toggle('green-link');
+            });
+        });
+
+
+        // JavaScript to toggle the visibility of the audio transcription (Class 1)
+        document.getElementById('showTranscriptionButton1').addEventListener('click', function() {
+            var audioTranscription1 = document.getElementById('audioTranscription1');
+            audioTranscription1.style.display = (audioTranscription1.style.display === 'none' || audioTranscription1.style.display === '') ? 'block' : 'none';
+        });
+
+        // JavaScript to toggle the visibility of the audio transcription (Class 2)
+        document.getElementById('showTranscriptionButton2').addEventListener('click', function() {
+            var audioTranscription2 = document.getElementById('audioTranscription2');
+            audioTranscription2.style.display = (audioTranscription2.style.display === 'none' || audioTranscription2.style.display === '') ? 'block' : 'none';
+        });
+    </script>
+
+</body>
+
+</html>
