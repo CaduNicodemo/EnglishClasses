@@ -32,7 +32,17 @@ body.night-mode {
     /* Change text color to white */
 }
 
+body.night-mode h1 {
+    color: #ffffff;
+    /* Change text color to white */
+}
+
 body.night-mode h2 {
+    color: #ffffff;
+    /* Change text color to white */
+}
+
+body.night-mode h5 {
     color: #ffffff;
     /* Change text color to white */
 }
