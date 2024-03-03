@@ -22,34 +22,26 @@ iframe {
     margin-bottom: 20px;
 }
 
-
-/* styles.css */
-
 body.night-mode {
     background-color: #1a1a1a;
-    /* Change background to dark color */
+    
     color: #ffffff;
-    /* Change text color to white */
+    
 }
 
 body.night-mode h1 {
     color: #ffffff;
-    /* Change text color to white */
+    
 }
 
 body.night-mode h2 {
     color: #ffffff;
-    /* Change text color to white */
+    
 }
 
 body.night-mode h5 {
     color: #ffffff;
-    /* Change text color to white */
+    
 }
-
-body.night-mode {
-    background-color: #1a1a1a;
-    /* Change background to dark color */
-    color: #ffffff;
-    /* Change text color to white */
-}
+body.night-mode p {
+    color: #000000;
