@@ -98,8 +98,8 @@
                     <source src="https://bd748f642cf8b253d59c-5c160b94f727c0d27cbeccc854542bc6.ssl.cf1.rackcdn.com/A1_at_the_library.mp3" type="audio/mp3">
                     Your browser does not support the audio element.
                 </audio> <br>
-                <button class="btn btn-primary mt-2" id="showTranscriptionButtonA">Transcription</button>
-                <div id="audioTranscription" style="display:none;">
+                <button class="btn btn-primary mt-2" id="showTranscriptionButton1">Transcription</button>
+                <div id="audioTranscription1" style="display:none;">
 
                     <p>
                         <b>Lucy:</b>
@@ -141,8 +141,8 @@
                     <h5><a href="https://www.bbc.co.uk/programmes/p0278xrf">Getting to know each other</a></h3>
                         <iframe width="400" height="500" frameborder="0" src="https://www.bbc.co.uk/programmes/p0278xrf/player"></iframe>
                         <br>
-                        <button class="btn btn-primary mt-2" id="showTranscriptionButtonV">Transcription</button>
-                        <div id="videoTranscription" style="display:none;">
+                        <button class="btn btn-primary mt-2" id="showTranscriptionButton2">Transcription</button>
+                        <div id="videoTranscription2" style="display:none;">
 <p>
                                 <b>Alice</b>
                                 <br> Hi, I'm Alice.
@@ -226,7 +226,6 @@ Can I do another one? Question four: When did you last cry?
             });
         });
 
-
         // JavaScript to toggle the visibility of the audio transcription (Exp Class)
         document.getElementById('showTranscriptionButtonA').addEventListener('click', function() {
             var audioTranscription = document.getElementById('audioTranscription');
@@ -236,6 +235,19 @@ Can I do another one? Question four: When did you last cry?
         // JavaScript to toggle the visibility of the video transcription (Exp Class)
         document.getElementById('showTranscriptionButtonV').addEventListener('click', function() {
             var videoTranscription = document.getElementById('videoTranscription');
+            videoTranscription.style.display = (videoTranscription.style.display === 'none' || videoTranscription.style.display === '') ? 'block' : 'none';
+        });
+
+        
+        // JavaScript to toggle the visibility of the audio transcription (Class 1)
+        document.getElementById('showTranscriptionButton1').addEventListener('click', function() {
+            var audioTranscription1 = document.getElementById('audioTranscription1');
+            audioTranscription1.style.display = (audioTranscription1.style.display === 'none' || audioTranscription1.style.display === '') ? 'block' : 'none';
+        });
+
+        // JavaScript to toggle the visibility of the video transcription (Class 1)
+        document.getElementById('showTranscriptionButton2').addEventListener('click', function() {
+            var videoTranscription = document.getElementById('videoTranscription2');
             videoTranscription.style.display = (videoTranscription.style.display === 'none' || videoTranscription.style.display === '') ? 'block' : 'none';
         });
     </script>
