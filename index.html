@@ -17,10 +17,10 @@
         <button class="btn btn-dark" id="nightModeButton"><i class="fas fa-moon"></i></button>
         <ul class="nav nav-tabs mt-3">
             <li class="nav-item">
-                <a class="nav-link active" id="class1-tab" data-toggle="tab" href="#exp-class">Experimental Class</a>
+                <a class="nav-link active" id="exp-class-tab" data-toggle="tab" href="#exp-class">Experimental Class</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="class2-tab" data-toggle="tab" href="#class1">Class 1</a>
+                <a class="nav-link" id="class1-tab" data-toggle="tab" href="#class1">Class 1</a>
             </li>
         </ul>
 
@@ -32,8 +32,8 @@
                     <source src="https://6a63fca904fd268f15f7-d5770ffdd579eb31eaa89faeffc55fe7.ssl.cf1.rackcdn.com/LE_listening_A1_The_first_English_class.mp3" type="audio/mp3">
                     Your browser does not support the audio element.
                 </audio> <br>
-                <button class="btn btn-primary mt-2" id="showTranscriptionButtonExp">Transcription</button>
-                <div id="audioTranscriptionExp" style="display:none;">
+                <button class="btn btn-primary mt-2" id="showTranscriptionButton1">Transcription</button>
+                <div id="audioTranscription1" style="display:none;">
 
                     <p>
                         Hello, everyone. Hello! It's nice to see you all here. Welcome to British Life and Language. I am your teacher. My name is Lindsay Black. That's L-I-N-D-S-A-Y Black. Before we begin, some information about the class. <br><br> Our
@@ -50,8 +50,8 @@
                     <h5><a href="https://www.bbc.co.uk/programmes/p0278sng">Welcome to London</a></h3>
                         <iframe width="400" height="500" frameborder="0" src="https://www.bbc.co.uk/programmes/p0278sng/player"></iframe>
                         <br>
-                        <button class="btn btn-primary mt-2" id="showTranscriptionButtonExp">Transcription</button>
-                        <div id="audioTranscriptionExp" style="display:none;">
+                        <button class="btn btn-primary mt-2" id="showTranscriptionButton1">Transcription</button>
+                        <div id="videoTranscription1" style="display:none;">
 
                             <p>
                                 <b>Amith</b>
@@ -142,7 +142,7 @@
                         <iframe width="400" height="500" frameborder="0" src="https://www.bbc.co.uk/programmes/p0278xrf/player"></iframe>
                         <br>
                         <button class="btn btn-primary mt-2" id="showTranscriptionButton1">Transcription</button>
-                        <div id="audioTranscription1" style="display:none;">
+                        <div id="videoTranscription1" style="display:none;">
 <p>
                                 <b>Alice</b>
                                 <br> Hi, I'm Alice.
@@ -227,16 +227,16 @@ Can I do another one? Question four: When did you last cry?
         });
 
 
-        // JavaScript to toggle the visibility of the audio transcription (Exp-Class)
-        document.getElementById('showTranscriptionButtonExp').addEventListener('click', function() {
-            var audioTranscriptionExp = document.getElementById('audioTranscriptionExp');
-            audioTranscriptionExp.style.display = (audioTranscriptionExp.style.display === 'none' || audioTranscriptionExp.style.display === '') ? 'block' : 'none';
-        });
-
-        // JavaScript to toggle the visibility of the audio transcription (Class 1)
+        // JavaScript to toggle the visibility of the audio transcription
         document.getElementById('showTranscriptionButton1').addEventListener('click', function() {
             var audioTranscription1 = document.getElementById('audioTranscription1');
             audioTranscription1.style.display = (audioTranscription1.style.display === 'none' || audioTranscription1.style.display === '') ? 'block' : 'none';
+        });
+
+        // JavaScript to toggle the visibility of the video transcription
+        document.getElementById('showTranscriptionButton1').addEventListener('click', function() {
+            var videoTranscription1 = document.getElementById('videoTranscription1');
+            videoTranscription1.style.display = (videoTranscription1.style.display === 'none' || videoTranscription1.style.display === '') ? 'block' : 'none';
         });
     </script>
 
