@@ -32,8 +32,8 @@
                     <source src="https://6a63fca904fd268f15f7-d5770ffdd579eb31eaa89faeffc55fe7.ssl.cf1.rackcdn.com/LE_listening_A1_The_first_English_class.mp3" type="audio/mp3">
                     Your browser does not support the audio element.
                 </audio> <br>
-                <button class="btn btn-primary mt-2" id="showTranscriptionButton1">Transcription</button>
-                <div id="audioTranscription1" style="display:none;">
+                <button class="btn btn-primary mt-2" id="showTranscriptionButtonExp">Transcription</button>
+                <div id="audioTranscriptionExp" style="display:none;">
 
                     <p>
                         Hello, everyone. Hello! It's nice to see you all here. Welcome to British Life and Language. I am your teacher. My name is Lindsay Black. That's L-I-N-D-S-A-Y Black. Before we begin, some information about the class. <br><br> Our
@@ -50,8 +50,8 @@
                     <h5><a href="https://www.bbc.co.uk/programmes/p0278sng">Welcome to London</a></h3>
                         <iframe width="400" height="500" frameborder="0" src="http://www.bbc.co.uk/programmes/p0278sng/player"></iframe>
                         <br>
-                        <button class="btn btn-primary mt-2" id="showTranscriptionButton2">Transcription</button>
-                        <div id="audioTranscription2" style="display:none;">
+                        <button class="btn btn-primary mt-2" id="showTranscriptionButtonExp">Transcription</button>
+                        <div id="audioTranscriptionExp" style="display:none;">
 
                             <p>
                                 <b>Amith</b>
@@ -141,8 +141,8 @@
                     <h5><a href="https://www.bbc.co.uk/programmes/p0278xrf">Getting to know each other</a></h3>
                         <iframe width="400" height="500" frameborder="0" src="http://www.bbc.co.uk/programmes/p0278xrf/player"></iframe>
                         <br>
-                        <button class="btn btn-primary mt-2" id="showTranscriptionButton2">Transcription</button>
-                        <div id="audioTranscription2" style="display:none;">
+                        <button class="btn btn-primary mt-2" id="showTranscriptionButton1">Transcription</button>
+                        <div id="audioTranscription1" style="display:none;">
 <p>
                                 <b>Alice</b>
                                 <br> Hi, I'm Alice.
@@ -227,16 +227,16 @@ Can I do another one? Question four: When did you last cry?
         });
 
 
+        // JavaScript to toggle the visibility of the audio transcription (Exp-Class)
+        document.getElementById('showTranscriptionButtonExp').addEventListener('click', function() {
+            var audioTranscriptionExp = document.getElementById('audioTranscriptionExp');
+            audioTranscriptionExp.style.display = (audioTranscriptionExp.style.display === 'none' || audioTranscriptionExp.style.display === '') ? 'block' : 'none';
+        });
+
         // JavaScript to toggle the visibility of the audio transcription (Class 1)
         document.getElementById('showTranscriptionButton1').addEventListener('click', function() {
             var audioTranscription1 = document.getElementById('audioTranscription1');
             audioTranscription1.style.display = (audioTranscription1.style.display === 'none' || audioTranscription1.style.display === '') ? 'block' : 'none';
-        });
-
-        // JavaScript to toggle the visibility of the audio transcription (Class 2)
-        document.getElementById('showTranscriptionButton2').addEventListener('click', function() {
-            var audioTranscription2 = document.getElementById('audioTranscription2');
-            audioTranscription2.style.display = (audioTranscription2.style.display === 'none' || audioTranscription2.style.display === '') ? 'block' : 'none';
         });
     </script>
 
