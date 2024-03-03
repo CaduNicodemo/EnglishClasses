@@ -50,7 +50,7 @@
                     <h5><a href="https://www.bbc.co.uk/programmes/p0278sng">Welcome to London</a></h3>
                         <iframe width="400" height="500" frameborder="0" src="https://www.bbc.co.uk/programmes/p0278sng/player"></iframe>
                         <br>
-                        <button class="btn btn-primary mt-2" id="showTranscriptionButton1">Transcription</button>
+                        <button class="btn btn-primary mt-2" id="showTranscriptionButton2">Transcription</button>
                         <div id="videoTranscription1" style="display:none;">
 
                             <p>
@@ -141,7 +141,7 @@
                     <h5><a href="https://www.bbc.co.uk/programmes/p0278xrf">Getting to know each other</a></h3>
                         <iframe width="400" height="500" frameborder="0" src="https://www.bbc.co.uk/programmes/p0278xrf/player"></iframe>
                         <br>
-                        <button class="btn btn-primary mt-2" id="showTranscriptionButton1">Transcription</button>
+                        <button class="btn btn-primary mt-2" id="showTranscriptionButton2">Transcription</button>
                         <div id="videoTranscription1" style="display:none;">
 <p>
                                 <b>Alice</b>
@@ -234,7 +234,7 @@ Can I do another one? Question four: When did you last cry?
         });
 
         // JavaScript to toggle the visibility of the video transcription
-        document.getElementById('showTranscriptionButton1').addEventListener('click', function() {
+        document.getElementById('showTranscriptionButton2').addEventListener('click', function() {
             var videoTranscription1 = document.getElementById('videoTranscription1');
             videoTranscription1.style.display = (videoTranscription1.style.display === 'none' || videoTranscription1.style.display === '') ? 'block' : 'none';
         });
