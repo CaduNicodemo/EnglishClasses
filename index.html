@@ -28,7 +28,7 @@
         </ul>
 
         <div class="tab-content mt-3">
-            <div class="tab-pane fade show active" id="exp-class">
+            <div class="tab-pane fade" id="exp-class">
                 <h2>Listening</h2>
                 <h5>The First English Class</h5>
                 <audio controls id="audioPlayer1">
@@ -93,7 +93,6 @@
                     Tasks Sheet
                 </a></h5>
             </div>
-
             <div class="tab-pane fade" id="class1">
                 <h2>Listening</h2>
                 <h5>At the library</h5>
@@ -145,7 +144,7 @@
                         <iframe width="400" height="500" frameborder="0" src="https://www.bbc.co.uk/programmes/p0278xrf/player"></iframe>
                         <br>
                         <button class="btn btn-primary mt-2" id="showTranscriptionButton2">Transcription</button>
-                        <div id="videoTranscription2" style="display:none;">
+                        <div id="videoTranscription1" style="display:none;">
 <p>
                                 <b>Alice</b>
                                 <br> Hi, I'm Alice.
@@ -207,9 +206,9 @@ Can I do another one? Question four: When did you last cry?
                     Class 1 Tasks
                 </a></h5>
             </div>
-            <div class="tab-pane fade" id="class2">
+            <div class="tab-pane fade show active" id="class2">
                 <h2>Listening</h2>
-                <h5>A---</h5>
+                <h5>Question forms - 6 minute grammar</h5>
                 <audio controls id="audioPlayer1">
                     <source src="./listening/6minute grammar - Question forms.mp3" type="audio/mp3">
                     Your browser does not support the audio element.
@@ -369,7 +368,7 @@ Can I do another one? Question four: When did you last cry?
                         <iframe width="400" height="500" frameborder="0" src="https://www.bbc.co.uk/programmes/p0278xrf/player"></iframe>
                         <br>
                         <button class="btn btn-primary mt-2" id="showTranscriptionButton2">Transcription</button>
-                        <div id="videoTranscription2" style="display:none;">
+                        <div id="videoTranscription1" style="display:none;">
 <p>
                                 <b>Alice</b>
                                 <br> Hi, I'm Alice.
@@ -474,7 +473,7 @@ Can I do another one? Question four: When did you last cry?
 
         // JavaScript to toggle the visibility of the video transcription (Class 1)
         document.getElementById('showTranscriptionButton2').addEventListener('click', function() {
-            var videoTranscription = document.getElementById('videoTranscription2');
+            var videoTranscription = document.getElementById('videoTranscription1');
             videoTranscription.style.display = (videoTranscription.style.display === 'none' || videoTranscription.style.display === '') ? 'block' : 'none';
         });
     </script>
