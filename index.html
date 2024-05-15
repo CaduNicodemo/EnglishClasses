@@ -43,6 +43,9 @@
             <li class="nav-item">
                 <a class="nav-link" id="class8-tab" data-toggle="tab" href="#class8">Class 8</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" id="class9-tab" data-toggle="tab" href="#class9">Class 9</a>
+            </li>
         </ul>
 
         <div class="tab-content mt-3">
@@ -1532,6 +1535,127 @@ Bye.
                     Class 8 Tasks
                 </a></h5>
             </div>
+            <div class="tab-pane fade" id="class9">
+                <h2>Video</h2>
+                
+                <div class="video-container">
+                    <h5><a href="http://www.bbc.co.uk/programmes/p028ksh8/player">Do you like cats?</a></h3>
+                  <iframe width="400" height="500" frameborder="0" src="http://www.bbc.co.uk/programmes/p028ksh8/player"></iframe> <br>
+                <button class="btn btn-primary mt-2" id="audioTranscriptionButton9">Transcription</button>
+                <div id="audioTranscription9" style="display:none;">
+
+                    <p>
+                        Hello again.  
+
+                        In this unit, we're going to look at the word <b>like</b>. And we're going to meet a lot of… cats!
+                        
+                        What's this cat <i>like</i> ?
+                        
+                        It's small, grey and soft!
+                        
+                        Do you <i>like</i> cats? Let's meet a few more.
+                    </p>
+                </div>
+                <br><br>              
+
+                <div class="video-container">
+                    <h2></h2>
+                    <h5>Alice in Wonderland - Part 3: The Caucus-race</h5>
+                    <audio controls id="audioPlayer2">
+                        <source src="./listening/Alice in Wonderland - part 3.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio> <br>
+                    <button class="btn btn-primary mt-2" id="videoTranscriptionButton9">Transcription</button>
+                    <div id="videoTranscription9" style="display:none;">
+                        <p>
+                            Narrator
+Hello. So far, Alice had been very small, then very tall, then very small again in this strange Wonderland she found when she chased a talking rabbit and fell down the rabbit hole. Now she was swimming in a pool of her own tears, wondering what was going to happen next.
+
+Alice
+Ooh, whatever's this? It's a mouse! Hello mouse! You're a very big mouse… but then, I'm a very, very little girl today. Whatever next? If this mouse talks, I won't be at all surprised… Oh Mouse, do you know the way out of this pool? I'm very tired of swimming about here, Mouse! Mouse? Hmmm. Perhaps it doesn't understand English. Maybe it's a French mouse! Now, what was that French I learned in school? Où est ma chatte?
+
+Mouse
+Chatte? Cat! Did you say cat?!
+
+Alice
+Oh, I'm so sorry Mouse! I forgot mice don't like cats.
+
+Mouse
+Would you like cats if you were me?
+
+Alice
+Well… perhaps not. But my cat Dinah is different. She's such a sweet, quiet thing. If you meet her, I'm sure you'll like her.
+
+Mouse
+We won't talk about cats any more, thank you!
+
+Alice
+We won't! Er… do you - do you er… like dogs? They can be so sweet and they kill all the rats… and… Oh dear!
+
+Alice
+Oh please come back, dear Mouse. We won't talk about cats or dogs, if you don't like them. Swim with me to the shore.
+
+Narrator
+So Alice and the mouse swam to the edge of the pool of tears. And as they swam, they were joined by lots of other creatures that had fallen into the pool, just like Alice and the mouse. There was a duck and a dodo and many other strange animals that Alice had never seen before. All the creatures had the same question.
+
+Animals
+How can we get dry? What can we do? I'm so far away from my nest, that pool was very wet and salty, oh it's no good for my fur, etc…
+
+Dodo
+We must have a Caucus-race!
+
+Animals
+Hooray! Hoorah!
+
+Alice
+What's a Caucus-race, Mr Dodo?
+
+Dodo
+The best way to explain a Caucus-race is to have a Caucus-race!
+
+Narrator
+It was the strangest race Alice had ever seen. The Dodo marked a circle for the racecourse and everyone stood anywhere they wanted to. Nobody said "One, two, three, go!" but everyone started running. Alice ran too, although she didn't quite know where she should run to. Everyone ran left and right in any direction they pleased. But after half an hour of running, everybody was quite dry again.
+
+Dodo
+The race is over!
+
+Multiple voices
+But who has won? Did I win? Who is the winner?
+
+Dodo
+Ah... yes... Who has won? Who has won? Everybody has won and everyone must have prizes! And she must give the prizes!
+
+Alice
+Me?
+
+Narrator
+Alice didn't have any prizes for a Caucus-race with her, but she searched in her pockets and found some sweets. She had enough sweets to give exactly one sweet to every runner.  
+
+Alice
+Here you are, one for you, and one for you…
+
+Animals
+Thank you very much… oh dear, this has no taste whatsoever… oh, I shall choke…it's rather good, yes very tasty…
+
+Alice
+And one for you – now, does everybody have one? Oh, I must say, my cat Dinah would love a Caucus-race…
+
+Animals
+Let's go! Come away! Time for bed! Oh, is it that time already? Cats - ugh!
+
+Alice
+Oh dear. I said it again. Come back! Please! I'm sorry! Poor Dinah. Nobody seems to like her down here and I'm sure she's the best cat in the world!
+
+Narrator
+Poor Alice felt very lonely and sad. She cried quietly to herself for a while. But in a little while, she heard footsteps in the distance. She looked up to see who it was. Next time, I'll tell you who the footsteps belonged to, and how Alice got so big she filled a whole house, and what happened when she kicked poor Bill the lizard up and out of the chimney. Goodbye.               
+                        </p>
+                    </div>
+                </div>
+                <br><br>
+                <h5><a href="https://docs.google.com/document/d/1x_c9hkx9jnNwZAaFjZXJSqM2MGsZDpDoxWHl-DEV1vI/edit?usp=sharing">
+                    Class 9 Tasks
+                </a></h5>
+            </div>
             
             
         </div>
@@ -1661,6 +1785,18 @@ Bye.
         document.getElementById('videoTranscriptionButton8').addEventListener('click', function() {
             var videoTranscription = document.getElementById('videoTranscription8');
             videoTranscription.style.display = (videoTranscription.style.display === 'none' || videoTranscription.style.display === '') ? 'block' : 'none';
+        });
+
+        // JavaScript to toggle the visibility of the video transcription (Class 9)
+        document.getElementById('videoTranscriptionButton9').addEventListener('click', function() {
+            var videoTranscription = document.getElementById('videoTranscription9');
+            videoTranscription.style.display = (videoTranscription.style.display === 'none' || videoTranscription.style.display === '') ? 'block' : 'none';
+        });
+        
+        // JavaScript to toggle the visibility of the audio transcription (Class 9)
+        document.getElementById('audioTranscriptionButton9').addEventListener('click', function() {
+            var audioTranscription1 = document.getElementById('audioTranscription9');
+            audioTranscription1.style.display = (audioTranscription1.style.display === 'none' || audioTranscription1.style.display === '') ? 'block' : 'none';
         });
     </script>
 
