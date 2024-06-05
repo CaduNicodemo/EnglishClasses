@@ -21,6 +21,12 @@ p {
 iframe {
     margin-bottom: 20px;
 }
+
+.nav-item{
+    text-align: center;
+    color: #000000;
+}
+
 .btn{
     color: #ffffff;
     font: 16px, Arial, sans-serif;
@@ -48,4 +54,12 @@ body.night-mode h5 {
 body.night-mode .btn {
     color: #000000;
     background-color: #007BFF;}
+
+body.night-mode p {
+        color: #000000;
+}
+
+body.night-mode .nav-item{
+    color: #ffffff;
+}
 
