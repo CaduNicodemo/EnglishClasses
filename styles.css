@@ -21,27 +21,31 @@ p {
 iframe {
     margin-bottom: 20px;
 }
+.btn{
+    color: #ffffff;
+    font: 16px, Arial, sans-serif;
+    background-color: #007BFF;
+    margin: 8px 0px 0px;
+    padding: 6px 12px;
+}
 
 body.night-mode {
     background-color: #1a1a1a;
-    
-    color: #ffffff;
-    
+    color: #ffffff;   
 }
 
 body.night-mode h1 {
     color: #ffffff;
-    
 }
 
 body.night-mode h2 {
     color: #ffffff;
-    
 }
 
 body.night-mode h5 {
     color: #ffffff;
-    
 }
-body.night-mode p {
+body.night-mode .btn {
     color: #000000;
+    background-color: #007BFF;}
+
