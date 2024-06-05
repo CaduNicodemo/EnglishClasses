@@ -63,7 +63,7 @@
                     <source src="https://6a63fca904fd268f15f7-d5770ffdd579eb31eaa89faeffc55fe7.ssl.cf1.rackcdn.com/LE_listening_A1_The_first_English_class.mp3" type="audio/mp3">
                     Your browser does not support the audio element.
                 </audio> <br>
-                <button class="btn btn-primary mt-2" id="AudioTranscriptionButton">Transcription</button>
+                <button class="btn transcription-toggle" data-target="AudioTranscription">Transcription</button>
                 <div id="AudioTranscription" style="display:none;">
                     <p>
                         Hello, everyone. Hello! It's nice to see you all here. Welcome to British Life and Language. I am your teacher. My name is Lindsay Black. That's L-I-N-D-S-A-Y Black. Before we begin, some information about the class. <br><br> Our
@@ -1766,117 +1766,23 @@
             });
         });
 
-        // JavaScript to toggle the visibility of the audio transcriptions
-        document.getElementById('AudioTranscriptionButton').addEventListener('click', function() {
-            var audioTranscription = document.getElementById('AudioTranscription');
-            audioTranscription.style.display = (audioTranscription.style.display === 'none' || audioTranscription.style.display === '') ? 'block' : 'none';
+        // JavaScript to toggle the visibility of transcriptions
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            var buttons = document.querySelectorAll('.transcription-toggle');
+            buttons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    var targetId = this.getAttribute('data-target');
+                    var target = document.getElementById(targetId);
+                    if (target.style.display === 'none') {
+                        target.style.display = 'block';
+                    } else {
+                        target.style.display = 'none';
+                    }
+                });
+            });
         });
-        document.getElementById('AudioTranscriptionButton1').addEventListener('click', function() {
-            var audioTranscription1 = document.getElementById('AudioTranscription1');
-            audioTranscription1.style.display = (audioTranscription1.style.display === 'none' || audioTranscription1.style.display === '') ? 'block' : 'none';
-        });
-        document.getElementById('AudioTranscriptionButton2').addEventListener('click', function() {
-            var audioTranscription2 = document.getElementById('AudioTranscription2');
-            audioTranscription2.style.display = (audioTranscription2.style.display === 'none' || audioTranscription2.style.display === '') ? 'block' : 'none';
-        });
-        document.getElementById('AudioTranscriptionButton3').addEventListener('click', function() {
-            var audioTranscription3 = document.getElementById('AudioTranscription3');
-            audioTranscription3.style.display = (audioTranscription3.style.display === 'none' || audioTranscription3.style.display === '') ? 'block' : 'none';
-        });
-        document.getElementById('AudioTranscriptionButton4').addEventListener('click', function() {
-            var audioTranscription5 = document.getElementById('AudioTranscription5');
-            audioTranscription5.style.display = (audioTranscription5.style.display === 'none' || audioTranscription5.style.display === '') ? 'block' : 'none';
-        });
-        document.getElementById('AudioTranscriptionButton6').addEventListener('click', function() {
-            var audioTranscription6 = document.getElementById('AudioTranscription6');
-            audioTranscription6.style.display = (audioTranscription6.style.display === 'none' || audioTranscription6.style.display === '') ? 'block' : 'none';
-        });
-        document.getElementById('AudioTranscriptionButton7').addEventListener('click', function() {
-            var audioTranscription7 = document.getElementById('AudioTranscription7');
-            audioTranscription7.style.display = (audioTranscription7.style.display === 'none' || audioTranscription7.style.display === '') ? 'block' : 'none';
-        });
-        document.getElementById('AudioTranscriptionButton8').addEventListener('click', function() {
-            var audioTranscription8 = document.getElementById('AudioTranscription8');
-            audioTranscription8.style.display = (audioTranscription8.style.display === 'none' || audioTranscription8.style.display === '') ? 'block' : 'none';
-        });
-        document.getElementById('AudioTranscriptionButton9').addEventListener('click', function() {
-            var audioTranscription9 = document.getElementById('AudioTranscription9');
-            audioTranscription9.style.display = (audioTranscription9.style.display === 'none' || audioTranscription9.style.display === '') ? 'block' : 'none';
-        });
-        document.getElementById('AudioTranscriptionButton10').addEventListener('click', function() {
-            var audioTranscription10 = document.getElementById('AudioTranscription10');
-            audioTranscription10.style.display = (audioTranscription10.style.display === 'none' || audioTranscription10.style.display === '') ? 'block' : 'none';
-        });
-        document.getElementById('AudioTranscriptionButton11').addEventListener('click', function() {
-            var audioTranscription11 = document.getElementById('AudioTranscription11');
-            audioTranscription11.style.display = (audioTranscription11.style.display === 'none' || audioTranscription11.style.display === '') ? 'block' : 'none';
-        });
-        document.getElementById('AudioTranscriptionButton12').addEventListener('click', function() {
-            var audioTranscription12 = document.getElementById('AudioTranscription12');
-            audioTranscription12.style.display = (audioTranscription12.style.display === 'none' || audioTranscription12.style.display === '') ? 'block' : 'none';
-        });
-        document.getElementById('AudioTranscriptionButton13').addEventListener('click', function() {
-            var audioTranscription13 = document.getElementById('AudioTranscription13');
-            audioTranscription13.style.display = (audioTranscription13.style.display === 'none' || audioTranscription13.style.display === '') ? 'block' : 'none';
-        });
-        document.getElementById('AudioTranscriptionButton14').addEventListener('click', function() {
-            var audioTranscription14 = document.getElementById('AudioTranscription14');
-            audioTranscription14.style.display = (audioTranscription14.style.display === 'none' || audioTranscription14.style.display === '') ? 'block' : 'none';
-        });
-        document.getElementById('AudioTranscriptionButton15').addEventListener('click', function() {
-            var audioTranscription15 = document.getElementById('AudioTranscription15');
-            audioTranscription15.style.display = (audioTranscription15.style.display === 'none' || audioTranscription15.style.display === '') ? 'block' : 'none';
-        });
-
-
-
-
-
-        // JavaScript to toggle the visibility of the video transcriptions
-        document.getElementById('VideoTranscriptionButton').addEventListener('click', function() {
-            var VideoTranscription = document.getElementById('VideoTranscription');
-            videoTranscription.style.display = (videoTranscription.style.display === 'none' || videoTranscription.style.display === '') ? 'block' : 'none';
-        });
-        document.getElementById('VideoTranscriptionButton1').addEventListener('click', function() {
-            var videoTranscription1 = document.getElementById('VideoTranscription1');
-            videoTranscription1.style.display = (videoTranscription1.style.display === 'none' || videoTranscription1.style.display === '') ? 'block' : 'none';
-        });
-        document.getElementById('VideoTranscriptionButton2').addEventListener('click', function() {
-            var videoTranscription2 = document.getElementById('VideoTranscription2');
-            videoTranscription2.style.display = (videoTranscription2.style.display === 'none' || videoTranscription2.style.display === '') ? 'block' : 'none';
-        });
-        document.getElementById('VideoTranscriptionButton3').addEventListener('click', function() {
-            var videoTranscription3 = document.getElementById('VideoTranscription3');
-            videoTranscription3.style.display = (videoTranscription3.style.display === 'none' || videoTranscription3.style.display === '') ? 'block' : 'none';
-        });
-        document.getElementById('VideoTranscriptionButton4').addEventListener('click', function() {
-            var videoTranscription4 = document.getElementById('VideoTranscription4');
-            videoTranscription4.style.display = (videoTranscription4.style.display === 'none' || videoTranscription4.style.display === '') ? 'block' : 'none';
-        });
-        document.getElementById('VideoTranscriptionButton5').addEventListener('click', function() {
-            var videoTranscription5 = document.getElementById('VideoTranscription5');
-            videoTranscription5.style.display = (videoTranscription5.style.display === 'none' || videoTranscription5.style.display === '') ? 'block' : 'none';
-        });
-        document.getElementById('VideoTranscriptionButton6').addEventListener('click', function() {
-            var videoTranscription6 = document.getElementById('VideoTranscription6');
-            videoTranscription6.style.display = (videoTranscription6.style.display === 'none' || videoTranscription6.style.display === '') ? 'block' : 'none';
-        });
-        document.getElementById('VideoTranscriptionButton7').addEventListener('click', function() {
-            var videoTranscription7 = document.getElementById('VideoTranscription7');
-            videoTranscription7.style.display = (videoTranscription7.style.display === 'none' || videoTranscription7.style.display === '') ? 'block' : 'none';
-        });
-        document.getElementById('VideoTranscriptionButton8').addEventListener('click', function() {
-            var videoTranscription8 = document.getElementById('VideoTranscription8');
-            videoTranscription8.style.display = (videoTranscription8.style.display === 'none' || videoTranscription8.style.display === '') ? 'block' : 'none';
-        });
-        document.getElementById('VideoTranscriptionButton9').addEventListener('click', function() {
-            var videoTranscription9 = document.getElementById('VideoTranscription9');
-            videoTranscription9.style.display = (videoTranscription9.style.display === 'none' || videoTranscription9.style.display === '') ? 'block' : 'none';
-        });
-        document.getElementById('VideoTranscriptionButton10').addEventListener('click', function() {
-            var videoTranscription10 = document.getElementById('VideoTranscription10');
-            videoTranscription10.style.display = (videoTranscription10.style.display === 'none' || videoTranscription10.style.display === '') ? 'block' : 'none';
-        });
+    </script>
 </body>
 
 </html>
