@@ -22,7 +22,7 @@ iframe {
     margin-bottom: 20px;
 }
 
-.nav-item{
+.nav-link{
     text-align: center;
     color: #000000;
 }
@@ -59,7 +59,7 @@ body.night-mode p {
         color: #000000;
 }
 
-body.night-mode .nav-item{
+body.night-mode .nav-link{
     color: #ffffff;
 }
 
