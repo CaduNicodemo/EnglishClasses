@@ -14,7 +14,7 @@ th, td {
 th {
     background-color: #f2f2f2;
 }
-.bullet{display: list-item; color: #000000;
+.bullet{display: list-item; list-style-position: inside;
 }
 
 h1,
